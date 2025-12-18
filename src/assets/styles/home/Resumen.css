@@ -1,0 +1,34 @@
+.content-resumen {
+    max-width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.grid-text {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .6rem 3.2rem;
+    padding: 1.3rem;
+}
+
+.content-text-resumen {
+    width: 40rem;
+    height: max-content;
+    background-color: transparent;
+    padding: 1.3rem;
+}
+
+.content-map {
+    width: 40rem;
+    height: inherit;
+    background-color: transparent;
+}
+
+.content-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

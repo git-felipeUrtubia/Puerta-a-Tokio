@@ -1,9 +1,7 @@
-
-
-
 .presentation {
     width: 100%;
-    height: max-content;
+    height: 35rem;
+    position: relative;
 }
 
 .presentation img {
@@ -13,3 +11,26 @@
     object-position: center;
 }
 
+.timbre {
+    position: absolute;
+    top: 5%;
+    left: 0.5%;
+    transform: translate(-0.5%, -5%);
+    width: 12rem;
+    height: 12rem;
+}
+
+.timbre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.separador {
+    border: none;
+    height: 2px;
+    background-color: #e4e4e4;
+    margin: 7rem 0;
+    width: 100%;
+}

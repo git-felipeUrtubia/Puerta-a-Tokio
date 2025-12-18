@@ -1,0 +1,128 @@
+/* Card.css */
+.card {
+  width: 320px; /* Ancho fijo similar a la imagen */
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: 'Arial', sans-serif; /* O la fuente que uses en tu proyecto */
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Contenedor de la imagen para posicionar el texto encima */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* El texto de "12 Día / 11 Noche" sobre la imagen */
+.duration-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra para que se lea bien */
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.route-info {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.country-highlight {
+  color: #c62828; /* Rojo oscuro similar al de la imagen */
+  font-weight: 500;
+}
+
+.route-cities {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Sección inferior: Precio y Estrellas */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.price-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Estrellas */
+.rating-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 5px; /* Ajuste visual */
+}
+
+.star-icon {
+  width: 16px;
+  height: 16px;
+  fill: #ff9800; /* Color naranja/amarillo */
+}
+
+/* Botón detalle */
+.details-link {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.details-link span {
+  border-bottom: 1px solid #333; /* El subrayado estilizado */
+  padding-bottom: 1px;
+}
+
+.details-link:hover span {
+  color: #c62828;
+  border-color: #c62828;
+}
