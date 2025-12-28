@@ -34,3 +34,19 @@
     margin: 7rem 0;
     width: 100%;
 }
+
+.separador-info {
+    border: none;
+    height: 2px;
+    background-color: #e4e4e4;
+    margin: 7rem 0 0 0;
+    width: 100%;
+}
+
+.separador-comments {
+    border: none;
+    height: 2px;
+    background-color: #e4e4e4;
+    margin: 0;
+    width: 100%;
+}

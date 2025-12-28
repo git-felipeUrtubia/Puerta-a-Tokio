@@ -7,6 +7,8 @@ import { SectionNav } from './SectionNav.jsx'
 import { Resumen } from './Resumen.jsx'
 import { Itinerario } from './Itinerario.jsx'
 import { Galeria } from './Galeria.jsx'
+import { Information } from './Information.jsx'
+import { Comments } from './Comments.jsx'
 
 
 export const Home = () => {
@@ -38,8 +40,13 @@ export const Home = () => {
             <Itinerario />
             <hr class="separador"></hr>
             <Galeria galerys={galerys}/>
-            <hr class="separador"></hr>
+            <hr class="separador-info"></hr>
+            <Information />
+            <hr class="separador-comments"></hr>
+            <Comments />
 
         </div>
     )
 }
+
+

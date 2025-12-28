@@ -1,0 +1,115 @@
+/* Information.css */
+:root {
+  --primary-red: #E3342F; /* Aproximación al rojo de tu logo */
+  --text-dark: #1a1a1a;
+  --text-gray: #666666;
+  --bg-light: #f8f9fa;
+  --white: #ffffff;
+}
+
+.info-section {
+  padding: 80px 20px;
+  background-color: var(--white);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Ajusta a tu fuente principal */
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-header {
+  margin-bottom: 60px;
+}
+
+.info-title {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+/* El detalle subrayado rojo estilo japonés/minimalista */
+.info-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-red);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.info-description {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.info-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--primary-red);
+}
+
+.info-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(227, 52, 47, 0.1); /* Rojo muy suave */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  color: var(--primary-red);
+}
+
+.info-icon-wrapper svg {
+  width: 32px;
+  height: 32px;
+}
+
+.info-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+.info-card-text {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .info-title {
+    font-size: 2rem;
+  }
+  
+  .info-section {
+    padding: 50px 20px;
+  }
+}
