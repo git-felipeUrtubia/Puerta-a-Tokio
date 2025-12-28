@@ -1,7 +1,6 @@
 import './assets/styles/general/App.css'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { CardProvider } from './context/CardContext.jsx'
-import { useCart } from './context/CardContext.jsx'
 import { NavBar } from './components/general/NavBar.jsx'
 import { Footer } from './components/general/Footer.jsx'
 import { Home } from './components/home/Home.jsx'

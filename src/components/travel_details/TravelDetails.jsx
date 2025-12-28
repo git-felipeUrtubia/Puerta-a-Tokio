@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Calendar, Clock, Star, CheckCircle } from 'lucide-react';
+import { getAllTours } from '../../services/getAllTours';
+import { useCart } from '../../context/CardContext';
 import '../../assets/styles/travel_details/TravelDetails.css';
 
-export const TravelDetails = ({ id }) => {
+export const TravelDetails = () => {
+
+    const { travelSelected } = useCart();
+
     const [activeTab, setActiveTab] = useState('resumen');
     const [trip, setTrip] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [tours, setTours] = useState([])
+
+    const fetchTours = async () => {
+        const data = await getAllTours() 
+        setTours(data)
+    }
 
     useEffect(() => {
-        // Simulamos la petición que busca por ID.
-        // En tu caso real, aquí harías el fetch o filter de tu array de datos.
+        fetchTours();
+    },[])
 
-        // ESTRUCTURA BASADA EN TU IMAGEN:
-        const mockDataFromDB = {
-            id: 1,
-            // He recortado el base64 por limpieza, aquí iría tu string largo
-            image: 'https://images.unsplash.com/photo-1528360983277-13d9b152c6d1?q=80&w=2070&auto=format&fit=crop',
-            title: 'Corea del Sur y Japón en 12 días.',
-            destinations: 'Japón',
-            description: 'Descubre la vibrante capital donde el futuro se mezcla con lo tradicional. Una experiencia sensorial única: gastronomía de clase mundial, templos antiguos y tecnología de punta.',
-            route: 'Tokio, Kioto, Osaka',
-            duration: '12 Día / 11 Noche',
-            price: 'USD 4839',
-            rating: 2
-        };
+    useEffect(() => {
+    
+        const mockDataFromDB = tours.find(t => t.id == travelSelected)
 
         setTimeout(() => {
-            // Aquí simulamos que encontramos el viaje con ese ID
             setTrip(mockDataFromDB);
             setLoading(false);
         }, 300);
-    }, [id]);
+    }, [tours, travelSelected]);
 
     if (loading) return <div className="td-loading">Cargando experiencia...</div>;
     if (!trip) return <div className="td-error">Viaje no encontrado</div>;
@@ -165,6 +165,9 @@ export const TravelDetails = ({ id }) => {
                             {/* Como solo tenemos 1 imagen en el objeto, la mostramos en grande */}
                             <div className="td-gallery-hero">
                                 <img src={trip.image} alt="Vista principal" />
+                                <img src={trip.image} alt="Vista principal" />
+                                <img src={trip.image} alt="Vista principal" />
+
                                 <span className="gallery-caption">Vista principal del destino</span>
                             </div>
                         </div>

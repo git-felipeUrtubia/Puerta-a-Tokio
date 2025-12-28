@@ -25,8 +25,6 @@ export const Itinerario = () => {
                 {tours.map(t => (
                     <Card key={t.id} tour={t}/>
                 ))}
-
-
             </div>
         </div>
     )
