@@ -1,6 +1,5 @@
 import '../../assets/styles/home/Home.css'
 import { useState, useEffect } from 'react'
-import { getAllGallerys } from '../../services/getAllGalerys.js'
 import presentation from '../../../public/presentation.png'
 import timbre from '../../../public/timbre.png'
 import { SectionNav } from './SectionNav.jsx'
@@ -14,16 +13,6 @@ import { Comments } from './Comments.jsx'
 export const Home = () => {
 
     const [galerys, setGalerys] = useState([])
-
-    const fetchGalery = async () => {
-        const data = await getAllGallerys();
-        setGalerys(data)
-    }
-
-    useEffect(() => {
-        fetchGalery()
-    },[])
-
     
 
     return (

@@ -7,14 +7,14 @@ import '../../assets/styles/home/Card.css'
 
 
 export const Card = ({ tour }) => {
-    const {id, image, title, destinations, description, route, duration, price, rating } = tour;
+    const {id_tour, image_card, title, destinations, description, route, duration, price, rating } = tour;
     const { viajeSeleccionado } = useCart()
     const nav = useNavigate()
 
     return (
         <div className="card">
             <div className="image-container">
-                <img className="card-image" src={image} alt={title} />
+                <img className="card-image" src={image_card} alt={title} />
                 {/* La duración ahora está sobre la imagen, igual que tu diseño */}
                 <span className="duration-badge">{duration}</span>
             </div>
@@ -37,7 +37,7 @@ export const Card = ({ tour }) => {
                     <div className="content-btn-details">
                         <Stars rating={rating} />
                         <button className="details-link" onClick={() => {
-                            viajeSeleccionado(id)
+                            viajeSeleccionado(id_tour)
                             nav('/home/travel-details')
                         }}>
                             <span>Detalle</span>
