@@ -25,13 +25,13 @@ export const Home = () => {
             </div>
             <SectionNav />
             <Resumen />
-            <hr class="separador"></hr>
+            <hr className="separador"></hr>
             <Itinerario />
-            <hr class="separador"></hr>
+            <hr className="separador"></hr>
             <Galeria galerys={galerys}/>
-            <hr class="separador-info"></hr>
+            <hr className="separador-info"></hr>
             <Information />
-            <hr class="separador-comments"></hr>
+            <hr className="separador-comments"></hr>
             <Comments />
 
         </div>

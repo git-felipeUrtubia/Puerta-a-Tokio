@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Calendar, Clock, Star, CheckCircle } from 'lucide-react';
-import { getAllTours } from '../../services/getAllTours';
+import { getAllTours } from '../../services/Catalog.js';
 import { useCart } from '../../context/CardContext';
 import '../../assets/styles/travel_details/TravelDetails.css';
 
