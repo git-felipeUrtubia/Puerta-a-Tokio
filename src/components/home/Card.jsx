@@ -36,10 +36,7 @@ export const Card = ({ tour }) => {
 
                     <div className="content-btn-details">
                         <Stars rating={rating} />
-                        <button className="details-link" onClick={() => {
-                            viajeSeleccionado(id_tour)
-                            nav('/home/travel-details')
-                        }}>
+                        <button className="details-link" >
                             <span>Detalle</span>
                         </button>
                     </div>

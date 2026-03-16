@@ -31,8 +31,6 @@ export const App = () => {
 
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/home/travel-details" element={<TravelDetails />} />
-          <Route path="/home/register" element={<Register />} />
           <Route path="/home/information/custom-itinerary" element={<CustomItinerary />} />
 
           <Route path="/home/nosotros/:option" element={<Our />} />
