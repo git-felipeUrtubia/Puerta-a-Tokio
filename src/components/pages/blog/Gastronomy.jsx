@@ -51,33 +51,6 @@ export const Gastronomy = () => {
             desc: "Desde helados hasta pasteles tradicionales. El sabor amargo y dulce perfecto.",
             image: "https://images.unsplash.com/photo-1515516089376-88db1e26e9c0?q=80&w=800&auto=format&fit=crop",
             mustTry: "Uji, Kioto"
-        },
-        {
-            id: 6,
-            name: "Yakitori",
-            jpName: "焼き鳥",
-            category: "callejera",
-            desc: "Brochetas de pollo a la parrilla con salsa tare. El compañero ideal de una cerveza fría.",
-            image: "https://images.unsplash.com/photo-1529193591184-b1d580690dd0?q=80&w=800&auto=format&fit=crop",
-            mustTry: "Omoide Yokocho"
-        },
-        {
-            id: 7,
-            name: "Taiyaki",
-            jpName: "たい焼き",
-            category: "dulces",
-            desc: "Pastel con forma de pez relleno de pasta de judías rojas (anko) o crema pastelera.",
-            image: "https://images.unsplash.com/photo-1627464096052-167cb4433fb1?q=80&w=800&auto=format&fit=crop",
-            mustTry: "Asakusa"
-        },
-        {
-            id: 8,
-            name: "Okonomiyaki",
-            jpName: "お好み焼き",
-            category: "platos",
-            desc: "La 'pizza japonesa'. Masa, repollo, carne y salsa especial cocinado frente a ti.",
-            image: "https://images.unsplash.com/photo-1582267600868-ea48a2099710?q=80&w=800&auto=format&fit=crop",
-            mustTry: "Hiroshima style"
         }
     ];
 

@@ -3,6 +3,7 @@ import '../../assets/styles/home/Itinerario.css'
 import { Card } from './Card.jsx';
 import { useEffect, useState } from 'react';
 import { getAllTours } from '../../services/Catalog.js'
+import data from '../../data/data.json'
 
 
 export const Itinerario = () => {
@@ -10,7 +11,6 @@ export const Itinerario = () => {
     const [tours, setTours] = useState([])
 
     const fetchTours = async () => {
-        const data = await getAllTours();
         setTours(data)
     }
     useEffect(() => {

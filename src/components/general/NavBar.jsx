@@ -36,7 +36,7 @@ export const NavBar = () => {
         if (!state) {
             return (
                 <div className='nav-actions desktop-only'>
-                    <button className='btn-account' onClick={() => nav('/home/login')}>
+                    <button className='btn-account'>
                         <User size={18} className="icon-user" />
                         <span>Mi Cuenta</span>
                     </button>
@@ -128,7 +128,7 @@ export const NavBar = () => {
                     {/* Botón Mi Cuenta en el menú móvil: SOLO SE MUESTRA SI NO HAY SESIÓN */}
                     {!state && (
                         <li className='nav-item mobile-only'>
-                            <a className='btn-account-mobile' href='/home/login'>
+                            <a className='btn-account-mobile'>
                                 <User size={18} /> Mi Cuenta
                             </a>
                         </li>

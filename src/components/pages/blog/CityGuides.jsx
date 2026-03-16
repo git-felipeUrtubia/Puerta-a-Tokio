@@ -31,7 +31,7 @@ export const CityGuides = () => {
             tag: "Gastronomía",
             title: "Kuidaore: Comer hasta reventar en Dotonbori",
             desc: "Takoyaki, Okonomiyaki y Kushikatsu. Los 5 puestos callejeros que no te puedes perder.",
-            image: "https://images.unsplash.com/photo-1590559899731-a38283952c9c?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=800&auto=format&fit=crop",
             readTime: "6 min lectura"
         },
         {
@@ -40,7 +40,7 @@ export const CityGuides = () => {
             tag: "Naturaleza",
             title: "Un día entre ciervos sagrados y Budas gigantes",
             desc: "Cómo organizar tu excursión de un día desde Kioto u Osaka sin perderte nada.",
-            image: "https://images.unsplash.com/photo-1599579086699-23d91eb345cb?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=800&auto=format&fit=crop",
             readTime: "5 min lectura"
         },
         {
@@ -49,7 +49,7 @@ export const CityGuides = () => {
             tag: "Cultura",
             title: "Resiliencia y Paz: Una visita necesaria",
             desc: "Guía respetuosa para visitar el Parque de la Paz y la hermosa isla de Miyajima.",
-            image: "https://images.unsplash.com/photo-1575438861962-e6e22c4f8202?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=800&auto=format&fit=crop",
             readTime: "10 min lectura"
         },
         {
@@ -58,7 +58,7 @@ export const CityGuides = () => {
             tag: "Tradición",
             title: "Los Alpes Japoneses y el Sake",
             desc: "Explora el casco antiguo de Sanmachi Suji y prueba la mejor carne de Hida.",
-            image: "https://images.unsplash.com/photo-1623899146243-71822c9533a0?q=80&w=800&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=800&auto=format&fit=crop",
             readTime: "7 min lectura"
         }
     ];

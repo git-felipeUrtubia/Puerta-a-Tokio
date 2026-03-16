@@ -196,10 +196,7 @@ export const TravelDetails = () => {
 
                         <hr className="td-divider" />
 
-                        <button className="td-btn td-btn-primary" onClick={() => {
-                            addTravelToPay(trip)
-                            nav("/home/travel-details/pay")
-                        }}>Reservar Ahora</button>
+                        <button className="td-btn td-btn-primary" >Reservar Ahora</button>
                         <button className="td-btn td-btn-outline">Consultar Dudas</button>
                     </div>
                 </div>

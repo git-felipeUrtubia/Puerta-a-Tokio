@@ -73,7 +73,7 @@ export const Home = () => {
             <hr className="separador-info"></hr>
             <Information />
             <hr className="separador-comments"></hr>
-            { isSession() ? <Comments /> : ''}
+            
 
         </div>
     )

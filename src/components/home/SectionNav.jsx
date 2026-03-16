@@ -36,8 +36,7 @@ export const SectionNav = () => {
         { id: 'section-resumen', label: 'Resumen', icon: <FileText size={18} /> },
         { id: 'section-itinerario', label: 'Itinerario', icon: <Map size={18} /> },
         { id: 'section-galeria', label: 'Galería', icon: <Image size={18} /> },
-        { id: 'section-information', label: 'Información', icon: <Info size={18} /> },
-        { id: 'section-comentarios', label: 'Comentarios', icon: <MessageSquare size={18} /> }
+        { id: 'section-information', label: 'Información', icon: <Info size={18} /> }
     ];
 
     return (

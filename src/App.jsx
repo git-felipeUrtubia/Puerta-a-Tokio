@@ -32,16 +32,11 @@ export const App = () => {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/home/travel-details" element={<TravelDetails />} />
-          <Route path="/home/login" element={<Login />} />
           <Route path="/home/register" element={<Register />} />
-          <Route path="/home/travel-details/pay" element={<Reservar />} />
           <Route path="/home/information/custom-itinerary" element={<CustomItinerary />} />
-          <Route path="/home/profile" element={<Profile />} />
 
-          <Route path="/home/destinos/:option" element={<Destination />} />
           <Route path="/home/nosotros/:option" element={<Our />} />
           <Route path="/home/blog/:option" element={<Blog />} />
-          <Route path="/home/experiencias/:option" element={<Experiences />} />
 
         </Routes>
         <Footer />
